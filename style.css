@@ -107,9 +107,13 @@ bg-theme{
 
 .sale-50-container{
   display: flex;
+  justify-content: center;
   align-items: center;
-  max-height: 846px;
 }
+  .sale-50-container img{
+    max-height: 846px;
+    max-width: 643px;
+  }
   .sale-50-container div{
     display: flex;
     align-items: center;
