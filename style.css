@@ -27,7 +27,9 @@ a:hover{
   text-decoration: underline;
 }
 
-
+.container{
+  padding: 0;
+}
 
 /* Navbar */
 
@@ -39,7 +41,6 @@ bg-theme{
   background-color: var(--linear-gradient-dark);
   height: 99px;
   display: flex;
-  justify-content: center;
   align-items: center;
 }
 
@@ -61,7 +62,7 @@ bg-theme{
 }
 
 .nav-menu-links a{
-  padding-left: 10px;
+  padding: 0px 5px 0px 5px; 
 }
 
 .nav-icon-links{
@@ -94,4 +95,68 @@ bg-theme{
     font-size: 11px;
     font-family: 'poppins', sans-serif;
     font-weight: 400;
+  }
+
+
+/* SALE 50 Banner */
+
+.sale-50{
+  background-color: var(--linear-gradient-dark);
+}
+
+.sale-50-container{
+  display: flex;
+  align-items: center;
+}
+  .sale-50-container div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 20px 0 20px;
+  }
+
+    .sale-50-container div h1{
+      text-align: center;
+      font-size: 65px;
+      font-weight: 800;
+    }
+    .sale-50-container div p{
+      text-align: center;
+      font-size: 16px;
+      font-weight: normal;
+    }
+
+.shop-now-button{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--color-theme);
+  width: 188px;
+  height: 60px;
+}
+
+  .shop-now-box-1{
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    width: 20px;
+    height: 20px;
+    border-left: solid 2px white;
+    border-top: solid 2px white;
+  }
+  .shop-now-button p{
+      color: white;
+      font-weight: 600;
+      margin: 0;
+  }
+  .shop-now-box-2{
+    position: absolute;
+    bottom: 10px;
+    right: -10px;
+    width: 20px;
+    height: 20px;
+    border-right: solid 2px white;
+    border-bottom: solid 2px white;
   }
