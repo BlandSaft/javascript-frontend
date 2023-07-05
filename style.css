@@ -1,0 +1,97 @@
+/* Starting with standard fonts and colors stuff */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --color-theme: #FF7373;
+  --color-dark: #222529;
+  --color-shadow: rgba(34, 37, 41, 0.060);
+  --linear-gradient-dark: #E6E6E6;
+  --linear-gradient-light: #F5F5F5;
+}
+
+
+html, body {
+  font-family: 'poppins', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+a{
+  color: var(--color-theme);
+  text-decoration: none;
+}
+
+a:hover{
+  color: var(--color-theme);
+  text-decoration: underline;
+}
+
+
+
+/* Navbar */
+
+bg-theme{
+  background-color: var(--color-theme);
+}
+
+.__navbar{
+  background-color: var(--linear-gradient-dark);
+  height: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.__navbar-container{
+  height: 49px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  color: var(--color-dark);
+  font-weight: 800;
+  font-size: 35px;
+}
+
+.menu-color{
+  color: var(--color-dark);
+}
+
+.nav-menu-links a{
+  padding-left: 10px;
+}
+
+.nav-icon-links{
+  display: flex;   
+}
+
+  .__navbar .nav-icon-links a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-dark);
+    background-color: white;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    margin-left: 10px;
+    text-decoration: none;
+    box-shadow: 0 0 12px 5px var(--color-shadow);
+  }
+    .nav-icon-links a:hover{
+      color: var(--color-theme);
+    }
+
+.__white-circle{
+  position: relative;
+}
+
+  .__white-circle span{
+    background-color: var(--color-theme);
+    font-size: 11px;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+  }
