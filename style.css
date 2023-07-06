@@ -226,11 +226,27 @@ bg-theme{
         text-decoration: line-through;
       }
     .featured-card-background{
+      display: flex;
       background-color: var(--linear-gradient-light);
       height: 66%;
     }
     .featured-card:hover .featured-card-background{
       background-color: var(--color-fade);
+    }
+    .featured-card-background img{
+      max-height: fit-content;
+    }
+    .featured-card-background-2{
+      position: absolute;
+      width: 255px;
+      top: 0;
+      left: -255px;
+      background-color: var(--color-fade);
+      height: 66%;
+      z-index: 3;
+    }
+    .featured-card:hover .featured-card-background-2{
+      left: 0;
     }
 
   .featured-card-popup-text{
@@ -245,6 +261,7 @@ bg-theme{
     width: 255px;
     height: 50px;
     transition: right 0.2s ease-in-out;
+    z-index: 4;
   }
     .featured-card:hover .featured-card-popup-text{
       bottom: 34%;
@@ -283,6 +300,7 @@ bg-theme{
     right: -50px;
     z-index: 2;
     transition: right 0.2s ease-in-out;
+    z-index: 4;
   }
     .featured-card:hover .featured-card-popup-icons{
       top: 10px;
@@ -308,3 +326,134 @@ bg-theme{
       background-color: var(--color-dark);
       color: white;
     }
+
+/* Pamela top picks */
+.top-pick{
+  display: flex;
+
+}
+
+.top-pick-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 50px 50px 50px 0; 
+}
+.top-pick-image{
+  display: flex;
+  position: relative;
+}
+  .top-pick-container img{
+    position: relative;
+  }
+
+.top-pick-middle{
+  width: 20px;
+}
+.top-pick-content-1{
+  position: absolute;
+  top: 25%; 
+  left: 53%;
+}
+  .top-pick-content-1 a {
+    text-decoration: none;
+  }
+  .top-pick-content-1 h1{
+    font-size: 45px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 30px;
+  }
+
+  .shop-now-button-top-picks-left{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: var(--color-dark);
+    width: 188px;
+    height: 60px;
+  }
+  
+    .shop-now-box-top-picks-left-1{
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      width: 20px;
+      height: 20px;
+      border-left: solid 2px white;
+      border-top: solid 2px white;
+    }
+    .shop-now-button-top-picks-left p{
+        color: white;
+        font-weight: 600;
+        margin: 0;
+    }
+    .shop-now-button-top-picks-left:hover p{
+      font-size: 17px;
+    }
+    .shop-now-box-top-picks-left-2{
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      width: 20px;
+      height: 20px;
+      border-right: solid 2px white;
+      border-bottom: solid 2px white;
+    }
+.top-pick-content-2{
+  position: absolute;
+  top: 25%; 
+  right: 60%;
+}
+
+.top-pick-content-2 a {
+  text-decoration: none;
+}
+.top-pick-content-2 h1{
+  font-size: 45px;
+  font-weight: bold;
+  color: var(--color-dark);
+  margin-bottom: 30px;
+}
+
+.shop-now-button-top-picks-right{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  background-color: white;
+  width: 188px;
+  height: 60px;
+}
+
+  .shop-now-box-top-picks-right-1{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 20px;
+    height: 20px;
+    border-left: solid 2px var(--color-dark);
+    border-top: solid 2px var(--color-dark);
+  }
+  .shop-now-button-top-picks-right p{
+      color: var(--color-dark);
+      font-weight: 600;
+      margin: 0;
+  }
+  .shop-now-button-top-picks-right:hover p{
+    font-size: 17px;
+  }
+  .shop-now-box-top-picks-right-2{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 20px;
+    height: 20px;
+    border-right: solid 2px var(--color-dark);
+    border-bottom: solid 2px var(--color-dark);
+  }
