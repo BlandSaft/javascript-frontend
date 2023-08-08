@@ -112,7 +112,7 @@ bg-theme{
 }
   .sale-50-container img{
     max-height: 846px;
-    max-width: 643px;
+    max-width: 500px;
   }
   .sale-50-container div{
     display: flex;
@@ -330,6 +330,8 @@ bg-theme{
 /* Pamela top picks */
 .top-pick{
   display: flex;
+  justify-content: center;
+  align-items: center;
 
 }
 
@@ -338,20 +340,19 @@ bg-theme{
   justify-content: center;
   align-items: center;
   position: relative;
-  width: 100%;
-  padding: 50px 50px 50px 0; 
+  max-width: 1680px;
+  padding: 50px;
 }
 .top-pick-image{
   display: flex;
   position: relative;
+  width: 825px;
+  height: 403px;
 }
   .top-pick-container img{
     position: relative;
   }
 
-.top-pick-middle{
-  width: 20px;
-}
 .top-pick-content-1{
   position: absolute;
   top: 25%; 
@@ -404,6 +405,7 @@ bg-theme{
       border-right: solid 2px white;
       border-bottom: solid 2px white;
     }
+
 .top-pick-content-2{
   position: absolute;
   top: 25%; 
@@ -457,3 +459,41 @@ bg-theme{
     border-right: solid 2px var(--color-dark);
     border-bottom: solid 2px var(--color-dark);
   }
+
+/* two for usd $29 */
+
+.two-for-29-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.two-for-29-content{
+  display: flex;
+  max-width: 1680px;
+  height: 664px;
+}
+
+.two-for-29-text{
+  display: flex;
+  background-color: var(--color-dark);
+  width: 825px;
+
+}
+
+.two-for-29-grid{
+  background-color: red;
+  width: 540px;
+
+}
+
+.two-for-29-filler-1{
+  background-color: #FF7373;
+  width: 20px;
+
+}
+.two-for-29-filler-2{
+  background-color: #FF7373;
+  width: 285px;
+
+}
